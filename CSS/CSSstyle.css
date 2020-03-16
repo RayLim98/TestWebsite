@@ -1,0 +1,63 @@
+
+#HTML-CSS-zen{
+    font-family: "ff-meta-web-pro", sans-serif;       
+
+}
+
+h1 { font-size: 2.2em; } 
+     
+h2 { font-size: 2.0em; } 
+     
+h3 { font-size: 1.8em; } 
+     
+h4 { font-size: 1.6em; } 
+     
+h5 { font-size: 1.4em; } 
+     
+p { font-size: 1.2em; }
+    
+.page-wrapper {
+    background: url(../Images/Tesselation-Transition.jpg);
+    background-size: 125%;
+}
+
+.banner {
+    float:left;
+    background: #dcedb9;
+    font-weight: bold;
+    color: white;
+    height:25em;
+    width:40%;
+}
+.banner h1{
+    width: 50%;
+    height: inherit;
+    float:right;
+    background-color:#c3e991;
+    padding: 2em 1em 0em 1em;
+    box-sizing: border-box;
+}
+.summery{
+    float:left;
+    width:60%;
+    background-color: #f4afab;
+    height:25em;
+    padding: 3em 2em 0 2em;
+    box-sizing: border-box;
+}
+.banner, .summery{
+    overflow: hidden;
+}
+
+.content{
+    clear:both;
+    background-color: white;
+    margin: 0 0 0 0;
+}
+.html-banner{
+    background-color: lavender;
+}
+.htmlCSS-content{
+    display:flex;
+    flex-direction: row;
+}
