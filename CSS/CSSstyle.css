@@ -5,23 +5,27 @@
 }
 
 h1 { font-size: 2.2em; } 
-     
-h2 { font-size: 2.0em; } 
-     
-h3 { font-size: 1.8em; } 
-     
-h4 { font-size: 1.6em; } 
-     
-h5 { font-size: 1.4em; } 
-     
+h2 { font-size: 2.0em; }   
+h3 { font-size: 1.8em; }     
+h4 { font-size: 1.6em; }     
+h5 { font-size: 1.4em; }      
 p { font-size: 1.2em; }
-    
+p + p { margin-top: 8px;}
+li + li {margin-top: 15px;}
+
+li:before{
+    content:"• ";
+}
+
+
+
+/*///////////////////////////////////////////////////*/
 .page-wrapper {
     background: url(../Images/Tesselation-Transition.jpg);
     background-size: 125%;
 }
 
-.banner {
+.main-banner {
     float:left;
     background: #dcedb9;
     font-weight: bold;
@@ -29,7 +33,7 @@ p { font-size: 1.2em; }
     height:25em;
     width:40%;
 }
-.banner h1{
+.main-banner h1{
     width: 50%;
     height: inherit;
     float:right;
@@ -41,23 +45,58 @@ p { font-size: 1.2em; }
     float:left;
     width:60%;
     background-color: #f4afab;
+    opacity: 0.8;
     height:25em;
     padding: 3em 2em 0 2em;
     box-sizing: border-box;
 }
-.banner, .summery{
+.main-banner, .summery{
     overflow: hidden;
 }
 
+
+/*///////////////////////////////////////////////////*/
 .content{
     clear:both;
-    background-color: white;
+    background-color: rgba(175, 131, 247, 0.8);
     margin: 0 0 0 0;
 }
-.html-banner{
-    background-color: lavender;
+.htmlCSS-banner{
+    float: right;
+    height: 25em;
+    width: 80%;
+    box-sizing: border-box;
+    background:#00A6FB;
+    background-size: 200px;
+    border-left: solid  black;
+}
+
+.htmlCSS-banner h2{
+    float:right;
+    font-weight: bold;
+    background-color:rgba(255,255,255,0.5);
+    height: inherit;
+    width:40%;
+    padding: 2em 1em 0em 1em;
+    box-sizing: border-box;
+    
 }
 .htmlCSS-content{
+    clear: both;
+    padding-top: 5em;
     display:flex;
-    flex-direction: row;
+    justify-content: column;
+    
 }
+.htmlCSS-content div{
+    padding:0 2em;
+    padding-top: 1em;
+    box-sizing: border-box;
+    color:white;    
+}
+
+.htmlCSS-content div:nth-child(odd){
+    background-color: rgba(209, 181, 253, 0.8);
+}
+
+
